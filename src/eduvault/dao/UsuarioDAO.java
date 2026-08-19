@@ -1,6 +1,6 @@
 package eduvault.dao;
 
-import conexion.DatabaseConnection;
+import eduvault.conexion.DatabaseConnection;
 import eduvault.model.Usuario;
 import eduvault.utils.PasswordHasher;
 

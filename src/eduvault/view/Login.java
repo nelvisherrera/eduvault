@@ -13,12 +13,11 @@ import javax.swing.JOptionPane;
  * @author PC01-107
  */
 public class Login extends javax.swing.JFrame {
-    
+
     private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(Login.class.getName());
 
-
     private UsuarioDAO usuarioDAO;
-    
+
     public Login() {
         usuarioDAO = new UsuarioDAO();
         initComponents();
@@ -34,92 +33,168 @@ public class Login extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jPanel4 = new javax.swing.JPanel();
+        jPanel5 = new javax.swing.JPanel();
         jPanel1 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
         txtCorreo = new javax.swing.JTextField();
         txtContrasena = new javax.swing.JPasswordField();
-        jButton1 = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jSeparator1 = new javax.swing.JSeparator();
+        jSeparator2 = new javax.swing.JSeparator();
+        jPanel2 = new javax.swing.JPanel();
+        jPanel3 = new javax.swing.JPanel();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        jPanel4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jPanel5.setBackground(new java.awt.Color(246, 242, 227));
+        jPanel5.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jPanel1.setBackground(new java.awt.Color(51, 51, 0));
+        jPanel1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jPanel1MouseClicked(evt);
+            }
+        });
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setText("login");
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 70, 120, 60));
-        jPanel1.add(txtCorreo, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 250, 400, 30));
-        jPanel1.add(txtContrasena, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 310, 400, 30));
+        jLabel11.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel11.setText("Log in");
+        jPanel1.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 10, 84, -1));
 
-        jButton1.setText("inciar");
-        jButton1.addActionListener(this::jButton1ActionPerformed);
-        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 410, -1, -1));
+        jPanel5.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 290, 330, 40));
+
+        txtCorreo.setBackground(new java.awt.Color(246, 242, 227));
+        txtCorreo.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        txtCorreo.setBorder(null);
+        jPanel5.add(txtCorreo, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 170, 330, 30));
+
+        txtContrasena.setBackground(new java.awt.Color(246, 242, 227));
+        txtContrasena.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        txtContrasena.setBorder(null);
+        jPanel5.add(txtContrasena, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 240, 330, 30));
+
+        jLabel1.setText("Username:");
+        jPanel5.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 150, 90, -1));
+        jPanel5.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 220, 100, -1));
+
+        jLabel3.setText("Password");
+        jPanel5.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 220, 90, -1));
+
+        jLabel4.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
+        jLabel4.setText("LOGIN");
+        jPanel5.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 70, -1, -1));
+
+        jLabel6.setText("Forgot Password");
+        jPanel5.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 340, 150, -1));
+
+        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/books-stack-of-three (1).png"))); // NOI18N
+        jPanel5.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 120, 310, 340));
+
+        jSeparator1.setForeground(new java.awt.Color(0, 0, 0));
+        jPanel5.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 200, 330, -1));
+
+        jSeparator2.setForeground(new java.awt.Color(0, 0, 0));
+        jPanel5.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 270, 330, -1));
+
+        jPanel2.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jPanel3.setBackground(new java.awt.Color(51, 51, 0));
+        jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        jPanel3.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(39, 6, 37, -1));
+
+        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel5.setText("Log in");
+        jPanel3.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 10, 84, -1));
+
+        jPanel2.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 10, 170, 30));
+
+        jLabel10.setText("Don´t have an account?");
+        jPanel2.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 10, 161, 29));
+
+        jPanel5.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(-20, 0, 980, 50));
+
+        jPanel4.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 960, 580));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 1124, Short.MAX_VALUE)
+            .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 578, Short.MAX_VALUE)
+            .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-         try {
-        // OBTENER DATOS
-        String correo = txtCorreo.getText().trim();
-        String contrasena = txtContrasena.getText().trim();
-        
-        // VALIDAR CAMPOS VACÍOS
-        if (correo.isEmpty()) {
-            JOptionPane.showMessageDialog(this, "Ingresa tu correo", "Campo requerido", JOptionPane.WARNING_MESSAGE);
-            txtCorreo.requestFocus();
-            return;
-        }
-        
-        if (contrasena.isEmpty()) {
-            JOptionPane.showMessageDialog(this, "Ingresa tu contraseña", "Campo requerido", JOptionPane.WARNING_MESSAGE);
-            txtContrasena.requestFocus();
-            return;
-        }
-        
-        // INTENTAR LOGIN
-        UsuarioDAO usuarioDAO = new UsuarioDAO();
-        Usuario usuario = usuarioDAO.login(correo, contrasena);
-        
-        if (usuario != null) {
-            JOptionPane.showMessageDialog(this, 
-                "¡Bienvenido " + usuario.getNombre() + "!",
-                "Login Exitoso",
-                JOptionPane.INFORMATION_MESSAGE);
-            
-            if (usuario.getRol().equals("ADMIN")) {
-                new MenuAdmin().setVisible(true);
-            } else {
-                new MenuEstudiante().setVisible(true);
+    private void jPanel1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel1MouseClicked
+        try {
+            // OBTENER DATOS
+            String correo = txtCorreo.getText().trim();
+            String contrasena = txtContrasena.getText().trim();
+
+            // VALIDAR CAMPOS VACÍOS
+            if (correo.isEmpty()) {
+                JOptionPane.showMessageDialog(this, "Ingresa tu correo", "Campo requerido", JOptionPane.WARNING_MESSAGE);
+                txtCorreo.requestFocus();
+                return;
             }
-            dispose();
-        } else {
-            JOptionPane.showMessageDialog(this, 
-                "Correo o contraseña incorrectos\n" +
-                "Revisa la consola para más detalles",
-                "Error de Autenticación",
-                JOptionPane.ERROR_MESSAGE);
-            txtContrasena.setText("");
-            txtContrasena.requestFocus();
+
+            if (contrasena.isEmpty()) {
+                JOptionPane.showMessageDialog(this, "Ingresa tu contraseña", "Campo requerido", JOptionPane.WARNING_MESSAGE);
+                txtContrasena.requestFocus();
+                return;
+            }
+
+            // INTENTAR LOGIN
+            UsuarioDAO usuarioDAO = new UsuarioDAO();
+            Usuario usuario = usuarioDAO.login(correo, contrasena);
+
+            if (usuario != null) {
+                JOptionPane.showMessageDialog(this,
+                        "¡Bienvenido " + usuario.getNombre() + "!",
+                        "Login Exitoso",
+                        JOptionPane.INFORMATION_MESSAGE);
+
+                if (usuario.getRol().equals("ADMIN")) {
+                    new MenuAdmin().setVisible(true);
+                } else {
+                    new MenuEstudiante().setVisible(true);
+                }
+                dispose();
+            } else {
+                JOptionPane.showMessageDialog(this,
+                        "Correo o contraseña incorrectos\n"
+                        + "Revisa la consola para más detalles",
+                        "Error de Autenticación",
+                        JOptionPane.ERROR_MESSAGE);
+                txtContrasena.setText("");
+                txtContrasena.requestFocus();
+            }
+
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(this,
+                    "Error: " + e.getMessage(),
+                    "Error del Sistema",
+                    JOptionPane.ERROR_MESSAGE);
+            e.printStackTrace();
         }
-        
-    } catch (Exception e) {
-        JOptionPane.showMessageDialog(this, 
-            "Error: " + e.getMessage(),
-            "Error del Sistema",
-            JOptionPane.ERROR_MESSAGE);
-        e.printStackTrace();
-    }
-    }//GEN-LAST:event_jButton1ActionPerformed
+
+    }//GEN-LAST:event_jPanel1MouseClicked
 
     /*
      private void iniciarSesion() {
@@ -174,9 +249,23 @@ public class Login extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel3;
+    private javax.swing.JPanel jPanel4;
+    private javax.swing.JPanel jPanel5;
+    private javax.swing.JSeparator jSeparator1;
+    private javax.swing.JSeparator jSeparator2;
     private javax.swing.JPasswordField txtContrasena;
     private javax.swing.JTextField txtCorreo;
     // End of variables declaration//GEN-END:variables
