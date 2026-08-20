@@ -10,9 +10,9 @@ public class UsuarioDAO {
     
     // MÉTODO LOGIN CON DEBUG
     public Usuario login(String correo, String contrasena) {
-        System.out.println("🔍 Intentando login...");
-        System.out.println("📧 Correo: " + correo);
-        System.out.println("🔑 Contraseña: " + contrasena);
+        System.out.println("Intentando login...");
+        System.out.println("Correo: " + correo);
+        System.out.println("Contraseña: " + contrasena);
         
         // Generar hash de la contraseña
         String contrasenaHash = PasswordHasher.hashPassword(contrasena);
